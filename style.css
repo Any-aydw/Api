@@ -7,7 +7,7 @@
 }
 body{
     background-color: antiquewhite;
-    display: flex;
+  
 }
 .header{
     width: 100%;
@@ -15,16 +15,13 @@ body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%); 
     display: flex;
 }
-
-
-
 .title{
     font-family: Roboto;
     margin-top: 10px;
     margin-left: 50px;
     color:  rgb(207, 207, 226);  
 }
-.filter{
+.filterGender{
     margin-left: 400px;
 
 }
@@ -39,5 +36,11 @@ body{
 }
 .filterBtn:hover{
     background-color: rgb(176, 176, 255);
+}
+div .character{
+    width:600px;
+    height:600px;
+    border: 2px solid blue;
+
 }
 }
