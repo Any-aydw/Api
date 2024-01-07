@@ -1,12 +1,17 @@
-// let characterDiv = document.getElementById("characterDiv")
+
+ let characterDiv = document.getElementById("characterDiv")
 
 // let totalPersonajes = document.querySelector("character")
-// fetch("https://rickandmortyapi.com/api/character") 
-// .then((data) => {
-// return data.json()
-// }).then( (data) => {
-// totalPersonajes=data.result
-// totalPersonajes.forEach((element)=> {
-// characterDiv.innerHTML += "<h3>Nombre: ${element.name} </h3>" 
-// })
-// })
+fetch("https://rickandmortyapi.com/api/character") 
+ .then((data) => {
+ return data.json()
+}).then( (data) => {
+let personajes = data.results;
+personajes.forEach((itemPersonajes) => {
+    characterDiv.innerHTML + = '<div> 
+                                   <h3>Nombre:${itemPersonajes.name} </h3>
+                                </div>'
+                               
+});
+
+ })
