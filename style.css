@@ -38,8 +38,9 @@ body{
     background-color: rgb(176, 176, 255);
 }
 .character{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-direction: row;
+ 
 }
 .characterDiv{
     width:300px;
@@ -47,13 +48,14 @@ body{
     border: 2px solid  rgba(2,0,36,1);
     padding: 10px;
     margin: 10px;
+    display: flex;
+   
+   
 }
 .characterDiv:hover{
     background-blend-mode: darken;
     transition: all;
     transition-duration: 5s;
-  
-
 } 
 .footer{
     width: 100%;
