@@ -14,8 +14,8 @@ personajes.forEach((itemPersonajes) => {
                                    <p>Género: ${itemPersonajes.gender}</p>
                                    <p>Especie: ${itemPersonajes.species}</p>
                                    <p>Estado: ${itemPersonajes.status}</p>
-                                   <p>Origen: ${itemPersonajes.origin}</p>
-                                   <p>Locación: ${itemPersonajes.location}</p>
+                                   <p>Origen: ${itemPersonajes.origin.name}</p>
+                                   <p>Locación: ${itemPersonajes.location.name}</p>
                                 </div> `
                                
 });
