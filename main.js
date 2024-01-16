@@ -51,18 +51,18 @@ function filterMale () {
     });
 mostrarEnElHtml(man)
 };
-//  function filterGenderless () {
-//     let Genderless = personajes.filter((itemPersonajes) =>{
-//          return itemPersonajes.gender==="Genderless";
-//     });
-//  mostrarEnElHtml(Genderless)
-//  };
-//  function filterUnknown () {
-//      let unknown = personajes.filter((itemPersonajes) =>{
-//          return itemPersonajes.gender==="unknown";
-//      });
-//      mostrarEnElHtml(unknown)
-//   };
+ function filterGenderless () {
+     let Genderless = personajes.filter((itemPersonajes) =>{
+        return itemPersonajes.gender==="Genderless";
+    });
+  mostrarEnElHtml(Genderless)
+ };
+ function filterUnknown () {
+     let unknown = personajes.filter((itemPersonajes) =>{
+          return itemPersonajes.gender==="unknown";
+     });
+      mostrarEnElHtml(unknown)
+   };
 
 function filterAll () {
     mostrarEnElHtml(personajes);
@@ -70,8 +70,8 @@ function filterAll () {
 
 btnfilterFemale.addEventListener("click",filterFemale);
 btnfilterMale.addEventListener("click", filterMale);
-// btnfilterGenderless.addEventListener("click", filterGenderless);
-// btnfilterUnknown.addEventListener("click", filterUnknown);
+btnfilterGenderless.addEventListener("click", filterGenderless);
+btnfilterUnknown.addEventListener("click", filterUnknown);
 btnfilterAll.addEventListener("click", filterAll);
 
 btnfirstPage.disabled = true;
