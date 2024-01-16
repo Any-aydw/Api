@@ -58,8 +58,8 @@ mostrarEnElHtml(man)
 //  mostrarEnElHtml(Genderless)
 //  };
 //  function filterUnknown () {
-//      let unknown = personajes.filter((itemPersonajes) => {
-//          return itemPersonajes.gender==="unknown"
+//      let unknown = personajes.filter((itemPersonajes) =>{
+//          return itemPersonajes.gender==="unknown";
 //      });
 //      mostrarEnElHtml(unknown)
 //   };
@@ -74,20 +74,51 @@ btnfilterMale.addEventListener("click", filterMale);
 // btnfilterUnknown.addEventListener("click", filterUnknown);
 btnfilterAll.addEventListener("click", filterAll);
 
+btnfirstPage.disabled = true;
+btnpreviousPage.disabled = true;
+
 function nextPage () {
     paginaActual++;
+    if(paginaActual===42){
+        btnnextPage.disabled=true;
+        btnlastPage.disabled=true;
+    }else{
+        btnpreviousPage.disabled=false;
+        btnfirstPage.disabled=false;
+    }
     pedidoFetch(paginaActual)
 }
 function previousPage () {
     paginaActual--;
+    if(paginaActual===1){
+        btnfirstPage.disabled=true;
+        btnpreviousPage.disabled=true;
+    }else{
+        btnnextPage.disabled=false;
+        btnfirstPage.disable=false;
+        btnlastPage.disabled=false;
+        btnnextPage.disabled=false;
+    }
     pedidoFetch(paginaActual)
 }
 function firstPage () {
     paginaActual=1;
+    if(paginaActual=1){
+        btnpreviousPage.disabled =true;
+        btnfirstPage.disabled =true;
+        btnnextPage.disabled=false;
+        btnlastPage.disabled=false;
+    }
     pedidoFetch(1)
 }
 function lastPage () {
     paginaActual=42;
+    if(paginaActual===42){
+        btnlastPage.disabled=true;
+        btnnextPage.disabled=true;
+        btnpreviousPage.disabled=false;
+        btnfirstPage.disabled=false;
+    }
     pedidoFetch(paginaActual)
 }
 
@@ -95,3 +126,4 @@ btnnextPage.addEventListener("click",nextPage );
 btnpreviousPage.addEventListener("click", previousPage);
 btnfirstPage.addEventListener("click", firstPage);
 btnlastPage.addEventListener("click", lastPage);
+
