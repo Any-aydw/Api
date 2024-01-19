@@ -29,6 +29,7 @@
         overflow: hidden;
         justify-content:center;
         align-items: center;
+        
     }
     .characterDiv{
         width:280px;
@@ -41,14 +42,14 @@
         text-align: left;
         flex-direction: column;
         overflow: hidden;
-        line-height:10px ;
+        line-height:12px ;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: normal;
     }
     img{
         width: 100%;
-        height: 150px;
+        height: 200px;
      }
      img:hover{
         filter: grayscale(90%);
@@ -85,9 +86,10 @@
         border-radius: 10px;
      }
     p{
-        margin: 20px;
+        margin: 5px;
         font-size: 1px;
         text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      }
  }
   @media screen and (min-width:481px){
@@ -114,7 +116,7 @@
         overflow: hidden;
    }
     .characterDiv{
-        width:200px;
+        width:280px;
         height:400px;
         border: 0.5px solid  rgb(207, 207, 226);;
         background-color:  rgb(207, 207, 226);;
@@ -123,8 +125,8 @@
         display: flex;
         text-align: left;
         flex-direction: column;
-         overflow: hidden; 
-         line-height:15px ;
+        overflow: hidden; 
+        line-height:12px ;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 5px;
         font-weight: normal;
@@ -173,12 +175,12 @@
       border-radius: 10px;
    }
   p{
-      padding: 5px;
+      margin: 5px;
+      padding: 1px;
       font-size: 5px;
    }
 
- } 
-@media screen and (min-width:980px){   
+ } @media screen and (min-width:980px){   
 
   body{
      background-color:aliceblue;
@@ -197,7 +199,6 @@
  }
  .filterGender{
     margin-left: 100px;
-
  } 
  .filterBtn{
     font-family:Arial, Helvetica, sans-serif;
@@ -216,8 +217,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
- 
- }
+}
   .characterDiv{
     width:200px;
     height:400px;
@@ -253,8 +253,7 @@
     align-items: center;
     margin-bottom: 0;
     color: antiquewhite;
-     
- }
+}
  .footerIcons{
     margin-top:-20px ;
     padding: 10px;
@@ -281,8 +280,8 @@ p{
     padding: 5px;
     margin-top: 50px;
  }
-}
-@media screen and (min-width:1025px){
+
+}@media screen and (min-width:1025px){
    .filterGender{
       margin-left: 200px;
   
@@ -293,5 +292,26 @@ p{
       margin-left: 350px;
   
    } 
-   
+   .character{
+      display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow: hidden;
+  }
+    .characterDiv{
+      width:280px;
+      height:450px;
+      border: 0.5px solid  rgb(207, 207, 226);;
+      background-color:  rgb(207, 207, 226);;
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      overflow: hidden;
+      line-height:12px ;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;  
+   } 
 }
