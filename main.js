@@ -1,10 +1,10 @@
 
  let characterDiv = document.getElementById("characterDiv")
- let btnfilterAll = document.getElementById("btnfilterAll")
- let btnfilterFemale = document.getElementById("btnfilterFemale")
- let btnfilterMale = document.getElementById("btnfilterMale")
- let btnfilterGenderless = document.getElementById("btnfilterGenderless")
- let btnfilterUnknown = document.getElementById("btnfilterUnknown") 
+ let btnfilterAll = document.getElementsByClassName("btnfilterAll")
+ let btnfilterFemale = document.getElementsByClassName("btnfilterFemale")
+ let btnfilterMale = document.getElementsByClassName("btnfilterMale")
+ let btnfilterGenderless = document.getElementsByClassName("btnfilterGenderless")
+ let btnfilterUnknown = document.getElementsByClassName("btnfilterUnknown") 
  let btnfirstPage = document.getElementById("firstPage")
  let btnpreviousPage = document.getElementById("previousPage")
  let btnnextPage = document.getElementById("nextPage")
@@ -12,6 +12,9 @@
  
  let personajes;
  let paginaActual = 1;
+ 
+ const hamburguesa = document.getElementById("hamburguesa");
+ const hamburguesaUl = document.getElementById("hamburguesa-ul");
 
  function mostrarEnElHtml (arrPersonajes){
     characterDiv.innerHTML = "";
@@ -127,3 +130,12 @@ btnpreviousPage.addEventListener("click", previousPage);
 btnfirstPage.addEventListener("click", firstPage);
 btnlastPage.addEventListener("click", lastPage);
 
+hamburguesa.addEventListener("click", () => {
+    if (hamburguesaUl.classList.contains("hidden-ul")) {
+      hamburguesaUl.classList.add("show-ul");
+      hamburguesaUl.classList.remove("hidden-ul");
+    } else if (hamburguesaUl.classList.contains("show-ul")) {
+      hamburguesaUl.classList.add("hidden-ul");
+      hamburguesaUl.classList.remove("show-ul");
+    }
+  });

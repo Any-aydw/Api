@@ -33,8 +33,7 @@
         overflow: hidden;
         justify-content:center;
         align-items: center;
-        
-    }
+   }
     .characterDiv{
         width:280px;
         height:400px;
@@ -102,6 +101,18 @@
      
     .hidden-ul {
    display: none;
+    }
+    li{
+      list-style: none;
+    }
+    .show-ul {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%) ;
+      padding-bottom: 10px;
     }
  }
   @media screen and (min-width:481px){
@@ -223,8 +234,9 @@
  }
  .filterGender{
     margin-left: 100px;
+    display: block;
  } 
- .filterBtn{
+ .filterGender button{
     font-family:Arial, Helvetica, sans-serif;
     padding: 8px;
     margin: 10px;
