@@ -11,16 +11,20 @@
     }
     .header{
         width: 100%;
-        height: 80px;
+        height: 60px;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%); 
         display: flex;
+        justify-content: space-around;
     }
     .title{
         font-family: Roboto;
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 5px;
         margin-left: 20px;
         color:  rgb(207, 207, 226);  
+   }
+    .filterGender{
+      display: none;
     }
     .character{
         display: flex; 
@@ -67,8 +71,7 @@
         align-items: center;
         margin-bottom: 0;
         color: antiquewhite;
-         
-     }
+      }
      .footerIcons{
         margin: 10px;
         padding: 10px;
@@ -91,6 +94,15 @@
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      }
+     .hamburguesa{
+      width: 40px;
+      height: 40px;
+      margin-top: 5px; 
+   }
+     
+    .hidden-ul {
+   display: none;
+    }
  }
   @media screen and (min-width:481px){
    body{
@@ -108,6 +120,9 @@
         margin-top: 5px;
         margin-left: 20px;
         color:  rgb(207, 207, 226);  
+    }
+    .filterGender{
+      display: none;
     }
      .character{
         display: flex; 
@@ -179,6 +194,15 @@
       padding: 1px;
       font-size: 5px;
    }
+   .hamburguesa{
+      width: 50px;
+      height: 50px;
+      margin-top: 5px; 
+   }
+     
+    .hidden-ul {
+   display: none;
+    }
 
  } @media screen and (min-width:980px){   
 
@@ -262,8 +286,8 @@
  }
  .fa-brands{
     font-size:20px;
-    margin bottom: 5px;
-    padding: 5px;
+    margin-bottom:5px;
+    padding:5px;
  }
  .pages{
     background-color:aliceblue;
@@ -276,11 +300,14 @@
     padding:8px;
     border-radius: 10px;
  }
-p{
-    padding: 5px;
-    margin-top: 50px;
+ p{
+   margin: 5px;
+   padding: 1px;
+   font-size: 5px;
+}
+ .hamburguesa{
+   display: none;
  }
-
 }@media screen and (min-width:1025px){
    .filterGender{
       margin-left: 200px;
@@ -314,4 +341,14 @@ p{
       font-size: 8px;
       font-weight: normal;  
    } 
+   p{
+      margin: 5px;
+      padding: 1px;
+      font-size: 5px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .footerP{
+      padding: 5px;
+      margin-top: 50px;
+   }
 }
