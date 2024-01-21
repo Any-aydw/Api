@@ -9,10 +9,7 @@
  let btnpreviousPage = document.getElementById("previousPage")
  let btnnextPage = document.getElementById("nextPage")
  let btnlastPage = document.getElementById("lastPage")
-
  
- 
-
  let personajes;
  let paginaActual = 1;
  
