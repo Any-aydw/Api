@@ -325,11 +325,17 @@
  .hamburguesa{
    display: none;
  }
+ .hidden-ul {
+   display: none;
+    }
 }@media screen and (min-width:1025px){
    .filterGender{
       margin-left: 200px;
   
    } 
+   .hidden-ul {
+      display: none;
+       }
 }
 @media screen and (min-width:1150px) {
    .filterGender{
@@ -367,5 +373,8 @@
    .footerP{
       padding: 5px;
       margin-top: 50px;
+   }
+   .hidden-ul {
+      display: none;
    }
 }
