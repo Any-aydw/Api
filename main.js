@@ -9,7 +9,10 @@
  let btnpreviousPage = document.getElementById("previousPage")
  let btnnextPage = document.getElementById("nextPage")
  let btnlastPage = document.getElementById("lastPage")
+
  
+ 
+
  let personajes;
  let paginaActual = 1;
  
@@ -71,11 +74,16 @@ function filterAll () {
     mostrarEnElHtml(personajes);
 }
 
-btnfilterFemale.addEventListener("click",filterFemale);
-btnfilterMale.addEventListener("click", filterMale);
-btnfilterGenderless.addEventListener("click", filterGenderless);
-btnfilterUnknown.addEventListener("click", filterUnknown);
-btnfilterAll.addEventListener("click", filterAll);
+btnfilterFemale[0].addEventListener("click",filterFemale);
+btnfilterFemale[1].addEventListener("click", filterFemale);
+btnfilterMale[0].addEventListener("click", filterMale);
+btnfilterMale[1].addEventListener("click", filterMale);
+btnfilterGenderless[0].addEventListener("click", filterGenderless);
+btnfilterGenderless[1].addEventListener("click", filterGenderless);
+btnfilterUnknown[0].addEventListener("click", filterUnknown);
+btnfilterUnknown[1].addEventListener("click", filterUnknown);
+btnfilterAll[0].addEventListener("click", filterAll);
+btnfilterAll[1].addEventListener("click", filterAll);
 
 btnfirstPage.disabled = true;
 btnpreviousPage.disabled = true;

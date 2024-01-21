@@ -89,7 +89,7 @@
      }
     p{
         margin: 5px;
-        font-size: 1px;
+        font-size: 10px;
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      }
@@ -101,6 +101,11 @@
      
     .hidden-ul {
    display: none;
+    }
+    .hidden-ul button{
+      background-color: transparent;
+
+
     }
     li{
       list-style: none;
@@ -203,7 +208,7 @@
   p{
       margin: 5px;
       padding: 1px;
-      font-size: 5px;
+      font-size: 10px;
    }
    .hamburguesa{
       width: 50px;
@@ -315,7 +320,7 @@
  p{
    margin: 5px;
    padding: 1px;
-   font-size: 5px;
+   font-size: 10px;
 }
  .hamburguesa{
    display: none;
@@ -356,7 +361,7 @@
    p{
       margin: 5px;
       padding: 1px;
-      font-size: 5px;
+      font-size: 15px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    }
    .footerP{
